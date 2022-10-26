@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1616721c20da5eb4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6557778ca73b0292",
+        "type": "uibuilder",
+        "z": "1616721c20da5eb4",
+        "name": "",
+        "topic": "",
+        "url": "react_ui",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "dist",
+        "deployedVersion": "5.1.1",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [],
+            []
+        ]
+    }
+]

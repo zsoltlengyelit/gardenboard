@@ -1,0 +1,73 @@
+{
+  "name": "uib-blank",
+  "version": "5.0.0",
+  "private": true,
+  "description": "This is about the simplest template you can get for uibuilder.",
+  "browser": "./src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.prod.json && vite build",
+    "i18n:extract": "i18next -c ./tools/i18next-parser.config.js 'src/**/*.{ts,tsx}'",
+    "lint": "eslint --ext ts,tsx src",
+    "start": "tsc -p tsconfig.prod.json && vite build --watch"
+  },
+  "keywords": [
+    "uibuilder",
+    "node-red",
+    "node-red-contrib-uibuilder"
+  ],
+  "author": "Julian Knight (Totally Information)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/TotallyInformation/node-red-contrib-uibuilder",
+  "bugs": "https://github.com/TotallyInformation/node-red-contrib-uibuilder/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TotallyInformation/node-red-contrib-uibuilder.git"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "alpha",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.0.1",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.9",
+    "axios": "^1.0.0",
+    "eslint": "8.22.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-testing-library": "^5.6.3",
+    "i18next-parser": "^6.5.0",
+    "i18next-scanner": "^4.0.0",
+    "i18next-scanner-typescript": "^1.0.6",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
+    "jsdom-testing-mocks": "^1.6.0",
+    "sass": "^1.54.9",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3",
+    "vite": "^3.1.6",
+    "vite-tsconfig-paths": "^3.5.0"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.8",
+    "@instructure/ui": "^8.29.0",
+    "@instructure/ui-i18n": "^8.29.0",
+    "i18next-browser-languagedetector": "^6.1.5",
+    "i18next-http-backend": "^1.4.1",
+    "jotai": "^1.8.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.35.0",
+    "react-i18next": "^11.18.6",
+    "react-router-dom": "^6.3.0"
+  }
+}
