@@ -13,7 +13,7 @@
         "z": "1616721c20da5eb4",
         "name": "",
         "topic": "",
-        "url": "react_ui",
+        "url": "gardenboard",
         "fwdInMessages": false,
         "allowScripts": false,
         "allowStyles": false,
@@ -22,10 +22,10 @@
         "extTemplate": "",
         "showfolder": false,
         "reload": false,
-        "sourceFolder": "src",
+        "sourceFolder": "dist",
         "deployedVersion": "5.1.1",
-        "x": 310,
-        "y": 160,
+        "x": 380,
+        "y": 180,
         "wires": [
             [],
             []

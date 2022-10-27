@@ -29,7 +29,7 @@ export default function EmptyLayout({ appNavRenderAfterItems }: Props) {
                             <Text
                                 size="x-small"
                                 color="secondary-inverse"
-                            >{t('common.byInstructure')}
+                            >{t('common.byGardenboard')}
                             </Text>
                         </View>
                     }
@@ -43,7 +43,6 @@ export default function EmptyLayout({ appNavRenderAfterItems }: Props) {
                 as="section"
                 margin="medium"
             >
-                hey
                 <Outlet/>
             </View>
 

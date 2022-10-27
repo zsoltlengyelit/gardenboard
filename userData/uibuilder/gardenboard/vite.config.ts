@@ -10,18 +10,26 @@ export default defineConfig(env => {
   const isDevMode = env.mode === 'development';
 
   return {
-    envPrefix: 'IDS_', // like IDentity Service
+    base: './',
+    envPrefix: 'GB_', // like Garden Board
     esbuild: {
       jsxFactory: '_jsx',
       jsxFragment: '_jsxFragment',
       jsxInject: 'import { createElement as _jsx, Fragment as _jsxFragment } from \'react\';',
     },
+    optimizeDeps: {
+      include: [
+        'node-red-contrib-uibuilder/front-end/src/uibuilderfe.js',
+      ]
+    },
     server: {
       proxy: {
-        '/': {
-          target: 'http://localhost:1880',
-          changeOrigin: true
-        }
+        '/uibuilder': {
+          target: 'http://localhost:1880/uibuilder',
+          changeOrigin: true,
+          ws: true,
+          rewrite: (path) => path.replace(/\/uibuilder/, ''),
+        },
       }
     },
     build: {

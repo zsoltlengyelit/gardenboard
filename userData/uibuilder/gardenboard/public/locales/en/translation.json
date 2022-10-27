@@ -1,0 +1,9 @@
+{
+  "common": {
+    "applicationName": "common.applicationName",
+    "byGardenboard": "common.byGardenboard",
+    "forms": {
+      "required": "common.forms.required"
+    }
+  }
+}

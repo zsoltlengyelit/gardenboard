@@ -5,10 +5,11 @@
   "description": "This is about the simplest template you can get for uibuilder.",
   "browser": "./src/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.prod.json && vite build",
+    "start": "vite --base=/ --port=13456",
+    "build": "tsc -p tsconfig.prod.json && vite build --base=/react_ui/",
     "i18n:extract": "i18next -c ./tools/i18next-parser.config.js 'src/**/*.{ts,tsx}'",
     "lint": "eslint --ext ts,tsx src",
-    "start": "tsc -p tsconfig.prod.json && vite build --watch"
+    "build:watch": "tsc -p tsconfig.prod.json && vite build --watch --base=/gardenboard/ --sourcemap"
   },
   "keywords": [
     "uibuilder",
@@ -64,6 +65,7 @@
     "i18next-browser-languagedetector": "^6.1.5",
     "i18next-http-backend": "^1.4.1",
     "jotai": "^1.8.6",
+    "node-red-contrib-uibuilder": "file:../../node_modules/node-red-contrib-uibuilder",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.35.0",
